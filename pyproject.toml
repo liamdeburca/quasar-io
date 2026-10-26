@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quasar-io"
+version = "0.1.0"
+requires-python= ">=3.12"
+dependencies = [
+    "quasar_typing",
+    "quasar_utils",
+    "quasar_models",
+    "quasar_errors",
+    "quasar_decrypt",
+    "lazy-imports>=1.0.0",
+    "astropy>=7.0",
+    "pydantic>=2.12",
+    "numpy>=1.26",
+    "scipy>=1.16",
+    "h5py>=3.16",
+]
+
+[project.optional-dependencies]
+yaml = ["pyyaml"]
+toml = ["toml"]
+toon = ["toon"]
+all = ["quasar-io[yaml, toml, toon]"]
+
+[project.urls]
+Homepage = "https://github.com/liamdeburca/quasar-io"
+Repository = "https://github.com/liamdeburca/quasar-io.git"
+"Bug Tracker" = "https://github.com/liamdeburca/quasar-io/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 79
+
+[lint.pyupgrade]
+keep-runtime-typing = true

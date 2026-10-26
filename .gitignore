@@ -1,0 +1,8 @@
+# Compiled python
+__pycache__/
+*.pyc
+.DS_Store
+*.egg-info/
+
+# VSCode Counter
+.VSCodeCounter
