@@ -6,3 +6,6 @@ __pycache__/
 
 # VSCode Counter
 .VSCodeCounter
+
+build
+dist
