@@ -1,11 +1,8 @@
-# Compiled python
-__pycache__/
-*.pyc
-.DS_Store
-*.egg-info/
-
-# VSCode Counter
-.VSCodeCounter
-
 build
 dist
+__pycache__
+.VSCodeCounter
+.DS_Store
+
+*.egg-info
+*.pyc
